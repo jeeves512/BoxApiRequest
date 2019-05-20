@@ -1,7 +1,7 @@
 import requests
 
 header = {'Authorization': 'Bearer '+'pVnqHSYrzp03RAlSQ9ZkxrwOhL6H4Xzf'}
-query = 'Partner Safeguarding Policies and Procedures Test Prime'
+query = 'Test Prime'
 endpoint = 'https://api.box.com/2.0/search?query='+query+'&type=folder&fields=name'
 get_response = requests.get(endpoint, headers=header)
 output = get_response.json()
